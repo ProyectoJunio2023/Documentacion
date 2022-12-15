@@ -1,0 +1,12 @@
+-- Selects tablas:	
+	SELECT numInventario, tipoEquipo, marca, modelo, numSerie, procesador, memoriaRam, Almacenamiento, sistemaOperativo, componenteExtra, fechaAlta FROM equipos;
+	SELECT numInventario, marca, modelo, numSerie,tipoImpresora,enRed,fechaAlta from impresoras;
+	SELECT numInventario, marca, modelo, numSerie,fechaAlta FROM dispositivos;
+SELECT departamentos, aulas, cursosCiclos FROM ubicacion;
+SELECT codigoBaja, descripcionBaja FROM motivosBaja;
+
+leerEquipoConDispositivo:
+Select a.nombre, a.grupo, e.marca, e.idEquipo, e.numSerie from alumnos as a inner join equipos as e using(idEquipo);
+
+leerEquipo
+Select * from equipos;
